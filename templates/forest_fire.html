@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+
+        <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" class="validate">
+
+        <input id="last_name" name="Oxygen" placeholder="Oxygen content in ppm"  type="text" class="validate">
+
+        <input id="_name" name="Humidity" placeholder="Humidity %" type="text" class="validate">
+
+        <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+    </div>
+    </form>
+
+    <h1>
+        {{pred}}
+    </h1>
+</body>
+</html>
